@@ -10,6 +10,22 @@ O desafio do fazendeiro é atravessar a si mesmo e as suas compras para a margem
 deixando cada compra intacta. Como ele fará isso? */
 
 
+
+/*
+
+1º Passo - Levar a cabra ao outro lado do rio;
+2º Passo - Voltar e pegar o Lobo e levar ao outro lado do rio;
+3º Passo - Deixar o lobo no leito do rio correto e trazer a cabra junto para buscar a alfafa;
+4º Passo - Deixar a Cabra no lado indesejado e levar a alfafa;
+5º Passo - Deixar a Alfafa junto ao lobo;
+6º Passo - Voltar e pegar o cabra;
+7º Passo - Voltar ao lado desejado e pronto, todos estarão lá.
+
+*/
+
+Window.alert('Feito somente para subir no git.')
+
+
 let barco = [];
 let leitoInicial = [];
 let leitoFinal = [];
