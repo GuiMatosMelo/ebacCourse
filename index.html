@@ -9,12 +9,47 @@
 <body>
 
     <script>
-        function obtermedia(){
-            var a = parseInt(document.getElementById("a").value);
-            var b = parseInt(document.getElementById("b").value);
-            var c = parseInt(document.getElementById("c").value);
+        //Váriaveis 
 
-            var m    = (a+b+c) /3;
+        let soma = 0;
+        let notas = [];
+        let m = 0;
+        let length = notas.length;
+
+
+        function obtermedia(){   
+            
+            number = NaN;
+            
+            let camposNegativos;
+            let camposBranco;
+            notas.push(parseInt(document.getElementById("a").value));
+            notas.push(parseInt(document.getElementById("b").value));
+            notas.push(parseInt(document.getElementById("c").value)); 
+
+                for(let i=0; i < length; i++){
+                    nota = notas[i]
+                    if(notas[i] < 0){
+                        camposNegativos = true;
+                    } else if(isNaN(nota) == true){
+                        camposBranco = true;
+                    } else {
+                        console.log("Cheguei aqui!")
+                    }
+                }
+
+                if(camposBranco === true || camposNegativos === true){
+                    window.alert("Não é permitido o envio de Campos em branco e/ou Campos com valores negativos.")
+                }
+            
+            for(let i=0; i < length; i++){
+                soma += notas[i];
+                
+            }
+
+            m = soma/notas.length;
+
+            
 
             document.getElementById("result").innerHTML = "Resultado:" + m;
         }
